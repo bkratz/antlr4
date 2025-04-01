@@ -15,7 +15,7 @@ class ListenerProcessorTest {
         var parseTreeFromInput = parseTreeCreator.createParseTreeFromInput("aplenty.input");
         var workflowsAndRatings = new ListenerProcessor().processParseTree(parseTreeFromInput);
 
-        assertThat(workflowsAndRatings.getWorkflows()).isNotNull();
-        assertThat(workflowsAndRatings.getRatings()).isNotNull();
+        assertThat(workflowsAndRatings.workflows()).isNotNull();
+        assertThat(workflowsAndRatings.ratings()).isNotNull();
     }
 }
